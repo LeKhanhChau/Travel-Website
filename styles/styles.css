@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 3rem;
+  font-family: "Lato", sans-serif;
+  line-height: 1.7;
+  color: #777;
+}
+
+.about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh;
+}
+.about .about_title {
+  height: 60px;
+  font-size: 10px;
+  line-height: 17px;
+  margin: 0 0 80px;
+  text-align: center;
+}
+.about .about_title .about_title--heading {
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: Lato;
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 59.5px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all 0.2s;
+}
+.about .about_title .about_title--heading:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.about .about_content {
+  padding: 10px 50px;
+}
+.about .about_content .col-1-of-2 {
+  float: left;
+  width: calc((100% - 6rem) / 2);
+}
+.about .about_content .col-1-of-2 .heading_left {
+  width: 540px;
+  height: 27px;
+  font-weight: 700;
+  margin: 0 0 15px;
+  text-transform: uppercase;
+}
+.about .about_content .col-1-of-2 .paragraph {
+  width: 540px;
+  height: 82px;
+  line-height: 27.2px;
+  margin: 0 0 30px;
+}
+.about .about_content .col-1-of-2 .btn-text {
+  color: #55c57a;
+  box-shadow: #000000 0 0 0 0;
+  font-family: Lato;
+  line-height: 27.2px;
+  padding: 3px;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #55c57a;
+}
+.about .about_content .col-1-of-2 .btn-text:hover {
+  width: 105px;
+  height: 34px;
+  background-color: #55c57a;
+  color: #fff;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+.about .about_content .col-1-of-2 .img_container {
+  position: relative;
+}
+.about .about_content .col-1-of-2 .img_container .position {
+  width: 55%;
+  z-index: 10;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  transition: all 0.2s;
+  outline-offset: 1rem;
+  border-radius: 2px;
+  position: absolute;
+}
+.about .about_content .col-1-of-2 .img_container .position:hover {
+  outline: 1rem solid #55c57a;
+  transform: scale(1.05) translateY(-0.5rem);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+.about .about_content .col-1-of-2 .img_container .photo--1 {
+  left: 0;
+  top: -2rem;
+}
+.about .about_content .col-1-of-2 .img_container .photo--2 {
+  right: 0;
+  top: 0rem;
+}
+.about .about_content .col-1-of-2 .img_container .photo--3 {
+  left: 20%;
+  top: 5.5rem;
+}
+
+.feature {
+  margin-top: -10rem;
+  padding: 20rem 0;
+  transform: skewY(-7deg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("https://natours.netlify.app/img/nat-4.jpg");
+}
+.feature .about_content {
+  display: flex;
+  justify-content: space-around;
+  transform: skewY(7deg);
+}
+.feature .about_content .feature_item {
+  float: left;
+  width: calc((100% - 18rem) / 4);
+  height: 300px;
+}
+.feature .about_content .feature_item .feature_container {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+.feature .about_content .feature_item .feature_container:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+.feature .about_content .feature_item .feature_container i {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.feature .about_content .feature_item .feature_container .heading_left {
+  color: #777777;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: 27.2px;
+  margin: 0 0 15px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 196px;
+  height: 28px;
+  font-size: 1rem;
+}
+.feature .about_content .feature_item .feature_container .feature_container-text {
+  color: #777777;
+  font-family: Lato;
+  font-size: 15px;
+  line-height: 25.5px;
+  text-align: center;
+}
+
+.about_content {
+  height: 315px;
+  color: #777777;
+  line-height: 17px;
+  max-width: 114rem;
+  margin: 0 auto;
+}
+.about_content:not(:last-child) {
+  margin-bottom: 8rem;
+}/*# sourceMappingURL=styles.css.map */
